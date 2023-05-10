@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Markdown</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="nav"> 
+            <header class="header"><h1>Markdown</h1></header>
+            <ul class="nav-ul">
+                <li><a class="nav-link uno" href="#Introducción">Introducción</a></li>
+                <li><a class="nav-link dos" href="#De_dónde_viene?">De dónde viene?</a></li>
+                <li><a class="nav-link tres " href="#Por_qué_utilizarlo?">Por qué utilizarlo?</a></li>
+                <li><a class="nav-link cuatro" href="#La_sintaxis">La sintaxis</a></li>
+                <li><a class="nav-link cinco" href="#Editores">Editores</a></li>
+                <li><a class="nav-link seis" href="#Multimarkdown">Multimarkdown</a></li>
+                <li><a class="nav-link siete" href="#Referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    
+        <nav class="res-nav">
+            <!-- mobile menu btn -->
+            <label class="hamburger" for="nav-toggle"></label>
+            <input id="nav-toggle" type="checkbox" class="hidden" />
+            <!-- mobile menu header -->
+            <header class="res-header"><h1>Markdown</h1></header>
+            <!-- mobile menu display -->
+            <ul class="res-nav-ul">
+                <li><a class="res-nav-link uno" href="#Introducción">Introducción</a></li>
+                <li><a class="res-nav-link dos" href="#De_dónde_viene?">De dónde viene?</a></li>
+                <li><a class="res-nav-link tres " href="#Por_qué_utilizarlo?">Por qué utilizarlo?</a></li>
+                <li><a class="res-nav-link cuatro" href="#La_sintaxis">La sintaxis</a></li>
+                <li><a class="res-nav-link cinco" href="#Editores">Editores</a></li>
+                <li><a class="res-nav-link seis" href="#Multimarkdown">Multimarkdown</a></li>
+                <li><a class="res-nav-link siete" href="#Referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    
+        <main id="main-doc" class="main">
+    
+            <section class="main-section" id="Introducción">
+                <header><h2>Introducción</h2></header>
+                <p> Markdown es una forma de agregar formatos como encabezados, negritas, cursivas, 
+                    listas… a un texto sin formato. En principio se creó como una alternativa a 
+                    HTML más simple, y que gente sin mucho conocimiento de este lenguaje de programación 
+                    pudiese crear páginas web. Pero con el tiempo, se convirtió en un sistema de escritura minimalista con el que poder escribir sin 
+                    muchas preocupaciones, y que puede ser exportados a otros sitios con facilidad.</p>
+                    <p>Al tener una sintaxis más simple que HTML, es mucho más sencillo de aprender. 
+                    No hay que preocuparse por ir abriendo y cerrando tags. 
+                    Y como no tiene los típicos menús contextuales de los editores de texto clásicos, se puede escribir en un entorno con menos distracciones. 
+                    Ideal para aquellos que pasan mucho de su tiempo escribiendo textos.</p>
+                </section>
+    
+            <section class="main-section de-donde-viene" id="De_dónde_viene?">
+                <header><h2>De dónde viene?</h2></header>
+                <p>John Gruber creó el lenguaje Markdown en 2004, con una ayuda importante de 
+                    Aaron Swartz en la sintaxis. Gruber tenía la meta de hacer que la gente 
+                    «pudiera escribir usando un formato de texto plano fácil-de-leer y fácil-de-escribir, y 
+                    con la posibilidad de poder convertir su documento en XHTML (o HTML) válido».  </p>
+                <p>La clave del diseño de Markdown es la facilidad de su lectura, que hace que el 
+                    lenguaje sea fácilmente interpretado, sin lucir como si hubiera sido marcado 
+                    con etiquetas o instrucciones de estilo, como RTF o HTML, los cuales tienen 
+                    etiquetas que hacen más difícil su lectura e interpretación. Por ello, su inspiración 
+                    más importante son las convenciones existentes para formatear texto plano 
+                    en los correos electrónicos, aunque también toma características de lenguajes 
+                    anteriores, como setext, atx (por Aaron Swartz), Textile, 
+                    reStructuredText, Grutatext, y EtText).  </p>
+                              <div style="display:none"><code></code><code></code><code></code><code></code><code></code></div>
+            </section>
+    
+            <section class="main-section por-que-utilizarlo" id="Por_qué_utilizarlo?">
+                <header><h2>Por qué utilizarlo?</h2></header>
+                <p>Este tipo de formato siempre será compatible con todas las plataformas que 
+                    utilices, así que utilizar Markdown es una manera de mantener todo tu 
+                    contenido siempre accesible desde cualquier dispositivo (smartphones, 
+                    ordenadores de escritorio, tablets…), ya que en cualquiera de ellas 
+                    siempre encontrarás las aplicaciones adecuadas para leer y editar este 
+                    tipo de contenido. </p>
+            </section>
+    
+            <section class="main-section" id="La_sintaxis">
+                <header><h2>La sintaxis</h2></header>
+                <p>La mejor manera de hacerse una idea de la sintaxis de Markdown es 
+                    simplemente echar un vistazo a un escrito formateado como tal. </p>
+                    <code> 
+    ## Título
+    ### Subtítulo
+    Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
+    
+    - Elemento 1
+    - Elemento 2
+    - Elemento 3
+    
+    Este es un ejemplo de texto que da entrada a una lista numerada:
+    
+    1. Elemento 1
+    2. Elemento 2
+    3. Elemento 3
+    
+    Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de una manera muy sencilla.
+        </code>
+        <p>Como ves, se cumple perfectamente uno de los objetivos para los que 
+            Markdown fue diseñado, y es hacer las publicaciones lo más legibles posible.</p>
+    
+        <p>de los objetivos de Markdown, es que puedas publicar los documentos “como 
+        están”. No importa si el resultado final que necesitas es HTML, un PDF o texto 
+        en formato enriquecido (RTF); ya que siempre podrás obtener estos formatos 
+        a través de un conversor, o a través de aplicaciones compatibles con Markdown.</p>
+        <p>Podés ver mucho más sobre la sintaxis <a href="https://markdown.es/sintaxis-markdown/">acá.</a></p>
+            </section>
+    
+            <section class="main-section" id="Editores">
+                <header><h2>Editores</h2></header>
+                <p>Gracias a la sintaxis tan simple que utiliza Markdown puedes utilizarlo 
+                    en una gran diversidad de aplicaciones y software.</p>
+                <p>En las siguientes listas podrás encontrar los editores adecuados
+                    dependiendo del lugar donde vayas a tipear.
+                </p>
+            <div class="editores-list">
+                    <ul>Editores para Windows
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                    </ul>
+                    <ul>Editores para Mac
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                    </ul>
+                    <ul>Editores para Linux
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                    </ul>
+                    <ul>Editores Online
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                            <li><a>algun editor</a></li>
+                    </ul>
+            </div>
+            </section>
+    
+            <section class="main-section" id="Multimarkdown">
+                <header><h2>Multimarkdown</h2></header>
+                <p>Multimarkdown (también conocido como MMD), nació de la necesidad 
+                de Fletcher Penney de escribir documentos académicos utilizando Markdown.</p>
+                <p>Así que este lenguaje no solo incluye todas las características que has 
+                    visto anteriormente en la sintaxis de Markdown, sino que vitamina 
+                    esta última añadiendo la capacidad de escribir notas al pie de 
+                    página, tablas, o metadatos.</p>
+                <p>Ojo, no todas las aplicaciones soportan Multimarkdown.</p>
+                <p>podés ver más sobre Multimarkdown <a href="https://markdown.es/multimarkdown/">acá</a></p>
+                <code>
+            Markdown
+            : Herramienta de conversión de texto plano a HTML.
+            : Lenguaje de marcado que facilita la escritura de documentos y artículos web.
+                    
+            Multimarkdown
+            : Lenguaje de marcado que añade características a las carencias de su hermano Markdown (tablas, notas al pie de página, listas de definiciones como esta…)
+                </code>
+            </section>
+    
+            <section class="main-section" id="Referencias">
+                <header><h2>Referencias</h2></header>
+                <p> <a class= "link-ref" target="blank" href="https://markdown.es/">La página que te esenseña markdown en dos patadas!</a> </p>
+                <p> <a class= "link-ref" target="blank" href="https://markdown.es/">Wikipedia</a> </p>
+            </section>
+            <div style="display:none;"><code></code><code></code><code></code></div>
+            <!-- Esto es para que freecodecamp no me diga qué tengo que escribir en mi página -->
+        </main>
+        </div>
+</body>
+</html>

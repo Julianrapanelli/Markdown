@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap');
+body{
+    font-family: 'rubik', sans-serif;
+    color: #222222;
+}
+.container{
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    line-height: 1.8rem;
+    scroll-behavior:smooth;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 7%, 11%);
+}
+.header{
+    border-bottom: solid 1px darkgray;
+    text-align:center;
+}
+
+.nav{
+    position: fixed;
+    width: 17vw;
+}
+.nav-ul{
+    list-style: none;
+    line-height: 3rem;
+    padding: 0 0 0 1.9rem;
+}
+.nav-link{
+    padding:.5rem;
+    border: solid .7px hsl(0, 7%, 11%);
+    border-radius: 6px;
+    transition:.5s;
+    font-size: 1.1rem;
+}
+
+.main{
+    box-sizing: border-box;
+    max-width: 75vw;
+    min-height: 0; 
+    height: 150rem;
+    border-left: solid 1px darkgray;
+    margin: 0 2.5rem 0 17vw;
+    padding-left: 2rem;
+}
+
+.main-section{
+    border-top: solid 1px darkgray;
+}
+
+#Introducción{
+    border: none;
+}
+#Introducción>header{
+    background-color: #F9DBBD;
+}
+.uno:hover {
+    background: #F9DBBD;
+}
+.de-donde-viene>header{
+    background-color: #FFA5AB;
+}
+.dos:hover{
+    background: #FFA5AB;
+}
+.por-que-utilizarlo>header{
+    background-color: #EF798A;
+}
+.tres:hover{
+    background: #EF798A;
+}
+#La_sintaxis>header{
+    background-color: #DA627D;
+}
+.cuatro:hover{
+    background: #DA627D;
+}
+#Editores>header{
+    background-color: #D14081;
+}
+.cinco:hover{
+    background: #D14081;
+}
+#Multimarkdown{
+    padding-bottom: 1rem;
+}
+#Multimarkdown>header{
+background-color: #A53860;
+}
+.seis:hover{
+    background: #A53860;
+}
+#Referencias>header{
+    background-color:#17BEBB;
+}
+.siete:hover{
+    background:#17BEBB;
+}
+.link-ref{
+    border: dashed 3px #17BEBB;
+}
+.link-fref:visited{
+    border: dashed 3px #112b81;
+}
+.editores-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* MENU MOBILE */
+.res-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.res-header{
+    margin: auto;
+    display: inline-block;
+}
+
+.res-nav-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: absolute;
+    list-style: none;
+    top: 8rem;
+    left: -600px;
+    background: cornsilk;
+    width: 200px;
+    height: auto;
+    border-radius: 15px; 
+    box-shadow: 3px 4px 5px rgba(34, 34, 34, 0.329);
+    transition: all .5s ease-in-out;
+}
+.res-nav-link{
+    background-color: ivory;
+    border: rgba(34, 34, 34, 0.788) 1px solid;
+    border-radius: 4px;
+    padding: .1rem;
+    transition: .4s;
+}
+
+.hamburger {
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    cursor: pointer; 
+}
+.hamburger:before {
+    content: "";
+    display: block;
+    background-color: rgba(20, 20, 20, 0.815);
+    width: 100%;
+    height: 4px;
+}
+.hamburger:after {
+    content: "";
+    display: block;
+    background-color: rgba(20, 20, 20, 0.815);
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+    box-shadow: 0px 8px 0 rgba(20, 20, 20, 0.815);
+}
+
+.res-nav input[type="checkbox"]:checked ~ .res-nav-ul {
+    left: 10%;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    background-color: rgb(180, 180, 175);
+}
+
+.hidden {
+    position: fixed;
+    top: -100%;
+    left: -100%;
+}
+
+@media (min-width: 1200px){
+    .res-nav{
+        display: none;
+    }
+    .res-nav-ul{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+    .res-nav{
+        display:flex;
+    }
+    .nav{
+        display: none;
+    }
+    .main{
+        border-right: solid 1px darkgray;
+        margin: auto;
+        max-width: 90vw;
+        padding-right: 2rem;
+        align-self: flex-end;
+    }
+}
+@media (max-width: 580px) {
+    .editores-list{
+        flex-direction: column;
+    }    
+}
